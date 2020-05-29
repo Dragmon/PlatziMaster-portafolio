@@ -16,6 +16,7 @@ $color-text1: #fdfefa;
 $color-text2: #051a6b;
 $font-main: 'Nunito', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
+$breakpoint-movil: 500px;
 $breakpoint-tablet: 800px;
 $breakpoint-desktop-1300: 1300px;
 $breakpoint-desktop-1600: 1600px;
@@ -45,10 +46,16 @@ h6 {
 }
 h1 {
   font-size: 3rem;
+  @media (max-width: $breakpoint-movil) {
+    font-size: 2.5rem;
+  }
 }
 h2 {
   font-size: 2.3rem;
   font-weight: 500;
+  @media (max-width: $breakpoint-movil) {
+    font-size: 2rem;
+  }
 }
 p {
   font-size: 1.5rem;
@@ -131,7 +138,6 @@ main {
   align-items: center;
   color: $color-text1;
   text-align: center;
-  @include widthSection;
 }
 
 .backgroundVideo {
@@ -197,6 +203,10 @@ main {
 }
 .contInfo {
   z-index: 0;
+  @include widthSection;
+  @media (max-width: $breakpoint-movil) {
+    padding: 30% 0 25px;
+  }
   h1,
   h2 {
     margin-bottom: 30px;
