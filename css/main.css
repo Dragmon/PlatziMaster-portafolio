@@ -43,6 +43,9 @@ h2 {
 p {
   font-size: 1.5rem;
   margin: 0; }
+  @media (max-width: 500px) {
+    p {
+      font-size: 1.2rem; } }
 
 a {
   color: #fdfefa;
@@ -71,7 +74,8 @@ header {
     width: 40%; }
     @media (max-width: 800px) {
       .logo img {
-        width: 100%; } }
+        width: 100%;
+        padding: 0 0 0 15%; } }
 
 nav {
   width: 250px;
@@ -100,6 +104,9 @@ nav {
     @media (max-width: 800px) {
       nav span {
         right: 70px; } }
+    @media (max-width: 500px) {
+      nav span {
+        font-size: 25px; } }
   nav li {
     list-style: none;
     font-size: 20px;
@@ -118,7 +125,10 @@ main {
   text-align: center; }
   @media (max-width: 500px) {
     .myInfomation {
-      height: auto; } }
+      height: auto;
+      background-image: url(../img/background.png);
+      background-position: right;
+      background-size: cover; } }
 
 .backgroundVideo {
   position: absolute;
@@ -133,8 +143,10 @@ main {
     height: auto; }
     @media (max-width: 1600px) {
       .backgroundVideo video {
-        width: auto;
-        /* height: 100vh; */ } }
+        width: auto; } }
+    @media (max-width: 500px) {
+      .backgroundVideo video {
+        display: none; } }
 
 .backgroundOverlay {
   height: 100vh;
@@ -142,7 +154,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   opacity: 0.85;
   z-index: -2;
   background: rgba(5, 25, 107, 0.6);
@@ -153,11 +164,17 @@ main {
   background: -ms-linear-gradient(top, rgba(5, 25, 107, 0.6) 0%, rgba(21, 101, 192, 0.3) 100%);
   background: linear-gradient(to bottom, rgba(5, 25, 107, 0.6) 0%, rgba(21, 101, 192, 0.3) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05196b', endColorstr='#1565c0', GradientType=0 ); }
+  @media (max-width: 500px) {
+    .backgroundOverlay {
+      display: none; } }
 
 .contInfo {
   z-index: 0;
   width: 70%;
   margin: 0 auto; }
+  @media (max-width: 500px) {
+    .contInfo {
+      width: 65%; } }
   @media (max-width: 500px) {
     .contInfo {
       padding: 30% 0 25px; } }
@@ -173,6 +190,9 @@ main {
       font-size: 1rem; } }
   .contact a {
     padding: 0 10px; }
+    @media (max-width: 500px) {
+      .contact a {
+        padding: 15px; } }
 
 .skills {
   height: calc(100vh - 100px);
@@ -182,6 +202,9 @@ main {
   position: relative;
   width: 70%;
   margin: 0 auto; }
+  @media (max-width: 500px) {
+    .skills {
+      width: 65%; } }
   @media (max-width: 800px) {
     .skills {
       height: auto;
@@ -241,6 +264,9 @@ main {
   grid-gap: 30px;
   width: 70%;
   margin: 0 auto; }
+  @media (max-width: 500px) {
+    .blockWork {
+      width: 65%; } }
   @media (max-width: 1300px) {
     .blockWork {
       grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
