@@ -116,6 +116,9 @@ main {
   align-items: center;
   color: #fdfefa;
   text-align: center; }
+  @media (max-width: 500px) {
+    .myInfomation {
+      height: auto; } }
 
 .backgroundVideo {
   position: absolute;

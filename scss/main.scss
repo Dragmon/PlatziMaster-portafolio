@@ -138,6 +138,9 @@ main {
   align-items: center;
   color: $color-text1;
   text-align: center;
+  @media (max-width: $breakpoint-movil) {
+    height: auto;
+  }
 }
 
 .backgroundVideo {
