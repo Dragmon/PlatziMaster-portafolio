@@ -327,6 +327,11 @@ main {
 
 .gridItem {
   position: relative;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
   &:nth-child(even) {
     align-self: end;
     a {

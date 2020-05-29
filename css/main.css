@@ -278,7 +278,11 @@ main {
       grid-template-rows: auto; } }
 
 .gridItem {
-  position: relative; }
+  position: relative;
+  transform: scale(1);
+  transition: 0.5s ease-in-out; }
+  .gridItem:hover {
+    transform: scale(1.2); }
   .gridItem:nth-child(even) {
     align-self: end; }
     .gridItem:nth-child(even) a {
